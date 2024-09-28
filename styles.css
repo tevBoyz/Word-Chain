@@ -65,6 +65,8 @@ header h1 {
   background-color: #fff;
   color: #2e2e2e;
   height: 40px;
+  width: 300px;
+  text-align: center;
 }
 
 .button.check {

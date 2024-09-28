@@ -104,6 +104,8 @@ var currentWordIndex = 1;
 var currentLetterIndex = 1;
 var time = 0;
 var timer;
+var input;
+
 
 var inputField = document.querySelector('.wordin');
 inputField.addEventListener('keydown', (event)=>{
@@ -120,9 +122,10 @@ checkButton.addEventListener('click', ()=>{
 })
 
 function check(){
-  var input = document.querySelector('.wordin');
+  input = document.querySelector('.wordin');
   var playerIn = input.value.toLowerCase();
-  input.value = ''  
+  input.value = '';
+  input.focus();
 
   var currentWord = currentChain[currentWordIndex].toLowerCase();
   
