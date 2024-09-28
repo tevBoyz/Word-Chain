@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Word Chain</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Word Chain</h1>
+      </header>
+
+      <main>
+        <div class="word-chain">
+          <span class="word word1">Tooth</span>
+          <span class="word word2">B----</span>
+          <span class="word word3">S-----</span>
+          <span class="word word4">P----</span>
+          <span class="word word5">C----</span>
+          <span class="word word6">P------</span>
+          <span class="word word7">K----</span>
+        </div>
+
+        <div class="controls">
+          <input
+            type="text"
+            id="wordin"
+            class="wordin"
+            placeholder="Try a word"
+            autocomplete="off"
+          />
+          <button class="button check">Check</button>
+          <br /><br />
+          <h5 class="timer"></h5>
+        </div>
+
+        <div class="popup-wrapper hide" id="popup">
+          <div class="popup-content">
+            <h2 class="popup-title">Congratulations!</h2>
+            <p class="popup-message">
+              You've completed the word chain successfully!
+            </p>
+            <p class="timedisplay">Time taken to finish:</p>
+            <br />
+            <button class="close-popup">Close</button>
+            <button class="close-popup" onclick="restart()">Restart</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
